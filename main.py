@@ -1,4 +1,4 @@
-import requests
+import requests, pandas, duckdb, pyarrow
 
 from dotenv import load_dotenv
 import os
