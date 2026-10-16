@@ -1,11 +1,14 @@
-import duckdb
+import requests
 
-conn = duckdb.connect('my_duck.db')
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
+url = os.getenv('URL')
 
-
-conn.execute('SELECT * FROM tennis_brand').df()
+response = requests.get(url)
+print(response.json())
 
 
 
