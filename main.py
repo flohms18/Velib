@@ -1,7 +1,8 @@
 import duckdb
-import pandas as pd
+
+conn = duckdb.connect('my_duck.db')
 
 
-duckdb.sql("SELECT DUNE").show()
+
 
 
