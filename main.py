@@ -1,5 +1,7 @@
-def hello():
-    print("Hello There!")
+import duckdb
+import pandas as pd
 
 
-hello()
+duckdb.sql("SELECT DUNE").show()
+
+
